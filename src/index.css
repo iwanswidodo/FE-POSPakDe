@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-charcoal-900/10;
+  }
+
+  html {
+    @apply bg-cream-50;
+  }
+
+  body {
+    @apply min-w-[320px] bg-cream-50 font-sans text-charcoal-900 antialiased;
+  }
+
+  button,
+  a,
+  input {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible {
+    @apply outline-none ring-2 ring-gold-400 ring-offset-2;
+  }
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-2xl border border-charcoal-900/5 bg-white shadow-card;
+  }
+}
